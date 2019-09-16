@@ -1,0 +1,141 @@
+<!--pages/everyDay/index.wxml-->
+<view class="list-total" style="display:none;">
+  <view class="list list-over">
+    <view class="list-img">
+      <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/over.png"></image>
+    </view>
+    <view class="list-name">背单词</view>
+    <view class="list-success">打卡成功，已坚持30天</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方法水电费法萨芬三发斯蒂芬斯蒂芬的。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方法水电费法萨芬三发斯蒂芬斯蒂芬的。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方。</view>
+    <view class="list-num">0/30</view>
+  </view>
+  <view class="list list-pending">
+    <view class="list-title">
+      <view>
+        <image style="width: 68rpx; height: 68rpx;" mode="aspectFit" src="../../image/book.png"></image>
+      </view>
+      <view>
+        <view class="list-name list-name-2">看书</view>
+        <view class="list-time">20:00-23:00</view>
+      </view>
+    </view>
+    <view class="list-content">变成更优秀法法方。</view>
+    <view class="list-num">0/30</view>
+  </view>
+</view>
+
+<!-- 数据为空时 -->
+<view class="list-none">
+  <view>
+    <image style="width: 300rpx; height: 300rpx;" mode="aspectFit" src="../../image/listNone.png"></image>
+  </view>
+  <view class="list-none-name">暂无打卡任务</view>
+  <view class="list-none-text">快点击按钮去发布吧~</view>
+  <view>
+    <navigator url="/pages/everyDay/addTask" hover-class="none">
+      <button type="default" size="mini" style="margin:80rpx;width:70vw;background-color:#ff9a6f;color:white;"> 发布+ </button>
+    </navigator>
+  </view>
+</view>

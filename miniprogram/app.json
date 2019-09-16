@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/everyDay/index",
+    "pages/everyDay/addTask",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -15,11 +17,29 @@
     "pages/im/room/room"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+   "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#edf2f3",
+  "navigationBarTitleText": "晨读打卡",
+  "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ffc44f",
+    "backgroundColor": "#edf2f3",
+    "list": [
+      {
+        "pagePath": "pages/everyDay/index",
+        "text": "打卡",
+        "iconPath": "image/everyDay.png",
+        "selectedIconPath": "image/everyDay2.png"
+      },
+      {
+        "pagePath": "pages/tomato/index",
+        "text": "番茄",
+        "iconPath": "image/tomato.png",
+        "selectedIconPath": "image/tomato2.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

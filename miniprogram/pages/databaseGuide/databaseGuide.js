@@ -19,12 +19,17 @@ Page({
       })
     }
   },
-
+  //增
   onAdd: function () {
     const db = wx.cloud.database()
-    db.collection('counters').add({
+    db.collection('taskList').add({
       data: {
-        count: 7777
+        name: "看书",
+        remark: "一周看完《小王子》",
+        dateStart: '2019-09-15',
+        dateEnd: '2019-10-15',
+        region: ['江苏省', '苏州市', '姑苏区'],
+        status: 1
       },
       success: res => {
         // 在返回结果中会包含新创建的记录的 _id
@@ -46,11 +51,11 @@ Page({
       }
     })
   },
-
+  //查
   onQuery: function() {
     const db = wx.cloud.database()
     // 查询当前用户所有的 counters
-    db.collection('counters').where({
+    db.collection('taskList').where({
       _openid: this.data.openid
     }).get({
       success: res => {
@@ -68,7 +73,7 @@ Page({
       }
     })
   },
-
+  //改
   onCounterInc: function() {
     const db = wx.cloud.database()
     const newCount = this.data.count + 1
@@ -87,7 +92,7 @@ Page({
       }
     })
   },
-
+  //改
   onCounterDec: function() {
     const db = wx.cloud.database()
     const newCount = this.data.count - 1
@@ -106,7 +111,7 @@ Page({
       }
     })
   },
-
+  //删
   onRemove: function() {
     if (this.data.counterId) {
       const db = wx.cloud.database()

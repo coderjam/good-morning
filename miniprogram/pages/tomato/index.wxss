@@ -1,0 +1,9 @@
+/* pages/tomato/index.wxss */
+
+view {
+  margin-bottom: 20rpx;
+}
+
+text {
+  text-indent: 2em;
+}
