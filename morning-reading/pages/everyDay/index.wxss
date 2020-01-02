@@ -1,0 +1,125 @@
+/* pages/everyDay/index.wxss ff9a6f*/
+
+.list-total {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 64rpx;
+}
+
+.list {
+  background-color: #fff;
+  height: 264rpx;
+  width: 320rpx;
+  border-radius: 20rpx;
+  margin-bottom: 40rpx;
+  box-shadow: 4rpx 4rpx 14rpx 0rpx rgb(177, 178, 179);
+}
+
+.list-over {
+  background-color: #ff9a6f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list-img, .list-name, .list-success {
+  text-align: center;
+}
+
+.list-img view {
+  border: 1px solid white;
+}
+
+.list-img {
+  margin-top: 40rpx;
+}
+
+.list-name {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #3c3c3c;
+  padding: 0 8rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.list-success {
+  font-size: 26rpx;
+  margin-bottom: 40rpx;
+  color: #3c3c3c;
+  padding: 0 4rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.list-pending {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 28rpx 16rpx 0 40rpx;
+}
+
+.list-title view image {
+  width: 68rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  padding-top: 8rpx;
+}
+
+.list-content {
+  color: #9b9b9b;
+  margin: 0 16rpx;
+  font-size: 30rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.list-num {
+  text-align: right;
+  font-size: 26rpx;
+  margin: 4rpx 12rpx 10rpx 12rpx;
+  color: #9b9b9b;
+}
+
+.list-name-2 {
+  margin-bottom: 6rpx;
+  text-align: right;
+}
+
+.list-time {
+  font-size: 24rpx;
+  color: #9b9b9b;
+  text-align: right;
+}
+
+/* 数据为空 */
+
+.list-none {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-none-name {
+  font-size: 32rpx;
+}
+
+.list-none-text {
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/everyDay/index",
+    "pages/everyDay/addTask",
+    "pages/tomato/index",
+    "pages/time/index",
+    "pages/me/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#edf2f3",
+    "navigationBarTitleText": "晨读打卡",
+    "navigationBarTextStyle": "black"
+  }
+  ,"tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ffc44f",
+    "backgroundColor": "#edf2f3",
+    "list": [
+      {
+        "pagePath": "pages/everyDay/index",
+        "text": "打卡",
+        "iconPath": "image/everyDay.png",
+        "selectedIconPath": "image/everyDay2.png"
+      },
+      {
+        "pagePath": "pages/tomato/index",
+        "text": "我的",
+        "iconPath": "image/tomato.png",
+        "selectedIconPath": "image/tomato2.png"
+      }
+    ]
+  }
+  ,"sitemapLocation": "sitemap.json"
+  
+}

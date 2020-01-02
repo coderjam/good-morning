@@ -1,0 +1,40 @@
+<!--pages/everyDay/addTask.wxml-->
+<view style="display:flex;flex-direction:column;justify-content:space-between;height:100vh;">
+  <view class="add-page">
+    <view class="cu-form-group margin-top">
+      <view class="title">名称</view>
+      <input placeholder="为任务起个名字吧" value="{{name}}"></input>
+    </view>
+    <view class="cu-form-group align-start">
+      <view class="title">简介</view>
+      <textarea maxlength="30" placeholder="任务简介" value="{{intro}}"></textarea>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">开始时间</view>
+      <picker mode="date" value="{{dateStart}}" start="{{minTime}}" end="{{maxTime}}" bindchange="DateStartChange">
+        <view class="picker">
+          {{dateStart}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">结束时间</view>
+      <picker mode="date" value="{{dateEnd}}" start="{{minTime}}" end="{{maxTime}}" bindchange="DateEndChange">
+        <view class="picker">
+          {{dateEnd}}
+        </view>
+      </picker>
+    </view>
+    <view class="cu-form-group">
+      <view class="title">地址选择</view>
+      <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view>
+    <button type="default" size="default" style="margin:80rpx;width:70vw;background-color:#ff9a6f;color:white;margin:0 auto 30rpx;"> 确定创建 </button>
+  </view>
+</view>
